@@ -1,0 +1,615 @@
+body, html{
+    padding:0;
+    margin:0;
+    background:#000;
+}
+html{
+    overflow-x:hidden;
+}
+@font-face {
+    font-family: Font;
+    src: url("../fonts/HelveticaNeue.ttf");
+}
+.borderTB{
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.coverDiv{
+    height:auto;
+    background: black;
+}
+.image-outer{
+    width:30%;
+    margin:0 auto;
+}
+.coverDiv img{
+    padding-top:20px;
+    padding-bottom: 100px;
+    width:100%;
+    margin:0 auto;
+}
+.global-wrapper{
+    background: url("../images/bg2.jpg") no-repeat;
+    background-size: 100% auto;
+    background-color:#000;
+    font-family: Font;
+}
+.enter {
+    display: block;
+    font-size:20px;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    border:2px solid #fff;
+    padding:5px;
+    text-transform:uppercase;
+}
+.enter a{
+    color:#fff;
+}
+.enter a:hover{
+    text-decoration:none;
+}
+.wrapper{
+    width:70%;
+    margin:0 auto;
+}
+ul{
+    padding:0;
+}
+.h2{
+    margin:0;
+}
+
+#sub {
+      display: none;
+      position: fixed;
+      right: 5px;
+      bottom: 5px;
+      padding: 10px;
+      background: white;
+      border-radius: 2px;
+      color: #000;
+}
+#sub input {
+     margin: 2%;
+}
+#sub p{
+    margin:0;
+}
+#x-button {
+      font-size: 1.5em;
+      color: #666;
+      position: absolute;
+      right: 2px;
+      bottom: 2px;
+      cursor: pointer;
+}
+
+.logo {
+      width: 240px;
+      margin: 0 auto;
+}
+.main_img img{
+    padding-top:1%;
+    display: block;
+    margin:0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.preorder_links{
+    width:50%;
+    display:block;
+    height:34px;
+    margin:0 auto;
+}
+.preorder_links li{
+    width:20%;
+    list-style-type:none;
+    float:left;
+}
+#countdown{
+    display:block;
+    height:100px;
+    width:30%;
+    margin:0 auto;
+    color:#000;
+}
+#countNum{
+    width:25%;
+    float:left;
+    font-size:0.8em;
+    text-align:center
+}
+#countTitle{
+    text-align:center;
+    font-size:4em;
+}
+.main_nav {
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff; 
+    width:100%;
+    z-index: 9999;
+    height:60px;     
+    transition: 0.8s;  
+}
+.main_nav li {
+    list-style-type:none;
+    text-align: center;
+    width: 20%;
+    float: left;
+    font-size: 2em;
+    text-transform: uppercase; 
+}
+.main_nav a {
+    color:#fff;
+    display: block;
+    padding:10px 0;
+    text-decoration: none;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    background:#000;
+    xborder:0;
+
+}
+/* heaader end*/
+.post {
+    color: #fff;
+    margin-bottom: 5%;
+}
+.h2{
+    font-size:1.5em;
+    margin:15px 0;
+    }
+.date {
+    font-style: italic;
+    color: #9F883A;
+    border:2px solid #9F883A;
+    display:inline;
+    padding:7px;
+}
+
+.h1_top{
+    font-size:3em;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom:3%;
+}
+.albums_slider p,.vids p,.tracks p {
+      font-size: 1.5em;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 4%;
+}
+.albums_slider,.vids,.tracks{
+    margin-bottom:15%;
+}
+.hidden_post{
+    display:block;
+}
+.more_news{
+    background-color:#17194C;
+    color:#fff;
+    margin:1% 0 6%;
+}
+.tour_dates{
+    margin-bottom:5%;
+}
+.album_name{
+    text-transform:uppercase;
+    font-style:italic;
+    color:#fff;
+    margin-bottom:3%;
+    font-size:20px;
+}
+.image_div{
+    width:50%;
+    float:left;
+}
+.songs_titles{
+    height:auto;
+    margin-left:55%
+}
+.songs_titles p{
+    margin:0;
+    color:#fff;
+}
+.btn a{
+    color:#333;
+    text-decoration:none
+}
+.btn{
+    margin-top:5%;
+}
+.release{
+    margin-bottom:2%;
+    height:auto;
+}
+footer{
+    display: inline-block;
+    width: 100%;
+    height : 60px;
+    margin-top:5%;
+}
+/*social icons sprite*/
+ul.socialicons { 
+    list-style: none; 
+    overflow: auto; 
+    } 
+ul.socialicons li { 
+    width: 31px; 
+    height: 31px; 
+    padding: 0 5px 0 0; 
+    float: left; 
+    margin-right:3px;
+} 
+
+ul.socialicons li a { 
+    border-radius:5px;
+    width: 30px; 
+    height: 30px; 
+    display: block; 
+    background: url("../images/sprite.jpg") no-repeat; 
+} 
+ul.socialicons li a.facebook { background-position: -87px -5px; } 
+ul.socialicons li a.twitter { background-position: -127px -5px; }
+ul.socialicons li a.soundcloud { background-position: -169px -79px; }  
+ul.socialicons li a.youtube { background-position: -251px -5px; }
+ul.socialicons li a.instagram { background-position: -332px -40px; }
+
+/*rotate social icons*/
+
+.rotate{
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+
+  overflow:hidden;
+}
+.rotate:hover{
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
+.bio{
+    margin-bottom:60px;
+    padding:20px;
+    font-size:1.1em;
+    color:#fff;
+}
+.bio img{
+    width:150%;
+}
+.post img {
+    transition: -webkit-transform 0.25s ease;
+}
+
+.post img:active {
+    -webkit-transform: scale(2);
+}
+.cover{
+    xposition:absolute;
+    width:100%;
+    height:500px;
+}
+/* phones*/
+ @media screen  and (min-width : 300px) and (max-width: 480px){
+     .cover img{
+        padding-top:0;
+    }
+    .image-outer{
+        width:100%;
+        margin:0 auto;
+    }
+     .preorder_links{
+        width:100%;
+        display:block;
+        height:34px;
+        margin:0 auto;
+    }
+     .main_nav{
+        height:0;
+        border:none;
+     }
+     .main_nav li{
+        width:100%;
+     }
+     .fixed{
+        position:static;
+     } 
+     .wrapper{
+        width:100%;
+     }
+     .post,.h1_top,.tracks,.albums_slider,.vids,.album_name,.songs_titles,footer{
+        text-align:center;
+        padding:0 20px;
+     }
+     .more_news{
+        margin-left:20px;
+     } 
+     .image_div{
+        margin:0 auto;
+        float:none;
+       }
+    .songs_titles{
+        margin:0;
+        clear:both;
+        height:auto;
+    }
+    .release{
+        margin-bottom:20px;
+    }
+    #countdown{
+        width:100%;
+    }
+    .h1_top{
+        padding:0 30px;
+    }
+}
+/* big phones*/
+@media screen  and (min-width : 480px) and (max-width: 768px){
+    .wrapper{
+        width:90%;
+        margin:0 auto;
+    }
+    .main_nav li{
+        font-size:1.5em;
+    }
+    .image-outer{
+        width:50%;
+        margin:0 auto;
+    }
+ }
+ /* tablets*/
+@media screen  and (min-width : 768px) and (max-width: 1024px){
+    albums_slider{
+        width:100%;
+        margin:0 auto;
+    }
+    .wrapper{
+        width:90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+      padding:0 20px;
+      background-color: #000;
+}
+ul{
+      padding:0;
+}
+#sub {
+      display: none;
+      position: fixed;
+      right: 5px;
+      bottom: 5px;
+      width: 250px;
+      padding: 10px;
+      background: white;
+      border-radius: 2px;
+      color: #000;
+}
+#sub input {
+     margin: 2%;
+}
+#sub p{
+    margin:0;
+}
+#x-button {
+      font-size: 20px;
+      color: #666;
+      position: absolute;
+      right: 2px;
+      bottom: 2px;
+      cursor: pointer;
+}
+
+.wrapper {
+      padding: 20px;
+      margin: 0 auto;
+      background: black;
+}
+.logo {
+      width: 240px;
+      margin: 0 auto;
+}
+.social {
+      width: 320px;
+      margin: 0 auto;
+}
+.social li {
+      display: inline-block;
+}
+.social a {
+      width: 60px;
+      height: 60px;
+      display: block;
+}*/
+/*sprite*/
+/*.facebook-square,.instagram,.soundcloud,.youtube,.twitter {
+      background: url("../images/sprites.png") no-repeat;
+}
+.facebook-square {
+      background-position: 0 0;
+      width: 60px;
+      height: 60px;
+}
+.instagram {
+      background-position: -244px 0;
+      width: 60px;
+      height: 60px;
+}
+.soundcloud {
+      background-position: -122px 0;
+      width: 60px;
+      height: 60px;
+}
+.youtube {
+      background-position: -61px 0;
+      width: 60px;
+      height: 60px;
+}
+.twitter {
+      background-position: -183px 0;
+      width: 60px;
+      height: 60px;
+}
+.main_nav {
+      width:100%;
+      z-index: 9999;
+}
+.main_nav li {
+      list-style-type:none;
+      text-align: center;
+      width: 20%;
+      float: left;
+      font-size: 25px;
+      text-transform: uppercase; 
+}
+.main_nav a {
+      color:#fff;
+      display: block;
+      padding:10px 0;
+      text-decoration: none;
+}*/
+/*HEADER END/////////////////////////////////////////////*/
+/*.post {
+      color: #fff;
+      margin-bottom: 30px;
+}
+.post h1 {
+      text-transform: uppercase;
+      font-family: proxima-nove, sens-serif;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: white;
+}
+.post_img {
+    width: 70%;
+}
+.news img {
+      width: 100%;
+      margin: 0 auto;
+}
+.post .date {
+      font-style: italic;
+      color: #DAA520;
+      margin-bottom: 15px;
+}
+.news iframe {
+    margin: 0 auto;
+}
+.main_p {
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      border-bottom: 2px solid white;
+}
+.link {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 1%;
+}
+.albums_slider,.vids {
+    margin-top: 4%;
+}
+.albums_slider p,.vids p {
+      font-size: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 4%;
+}
+.vids iframe {
+    width: 100%;
+}
+.selected {
+    background: #281900;
+}*/
+/* Extra Small */
+/*@media screen  and (min-width : 3px) and (max-width: 480px){
+  body {
+    background: black;
+    padding:0;
+  }
+  .main_nav {
+    position: relative;
+    width: 100%;
+  }
+  .main_nav li {
+    width: 100%;
+  }
+  .post h1 {
+    width: 100%;
+  }
+  .news {
+    padding: 10px;
+  }
+  .post_img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fixed{
+    margin:0;
+  }
+}*/
+/* Tblets */
+/*@media screen  and (min-width : 480px) and (max-width: 768px) {
+     .news{
+        margin-top:40px;
+    }
+}*/
+/* Small */
+/*@media screen  and (min-width : 768px) and (max-width: 1024px){
+    .news{
+        margin-top:40px;
+    }
+}
+*/

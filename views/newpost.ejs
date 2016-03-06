@@ -1,0 +1,16 @@
+<style>
+textarea,input{
+    display:block;
+    width: 50%;
+}
+</style>
+<h1>Create a new post</h1>
+<form id="newpostForm" action="/posts" method="POST">
+<label for="post">Post</label>
+<textarea cols="40" rows="10"  name="post" placeholder="enter post" ></textarea>
+<label for="image">Image</label>
+<input type="text" size="80" name="image" placeholder="enter image address"/>
+<label for="otherInfo">Additional info</label>
+<textarea cols="40" rows="10"  name="otherInfo" placeholder="enter additional info like video links "></textarea>
+<button class="btn">Submit</button>
+</form>

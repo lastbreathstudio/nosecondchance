@@ -1,0 +1,16 @@
+<style>
+textarea,input{
+    display:block;
+    width: 80%;
+}
+</style>
+
+<form id="newpostForm" action="/posts/<%= post._id %>?_method=PUT" method="POST">
+<label for="post">Post</label>
+<textarea cols="40" rows="10"  name="post[post]" placeholder="<Enter post "><%- post.post %></textarea>
+<label for="image">Image</label>
+<input type="text" size="80" name="post[image]" placeholder="Enter image url" value="<%= post.image %>"/>
+<label for="otherInfo">Additional info</label>
+<textarea cols="40" rows="10"  name="post[otherInfo]" placeholder="Enter dditional info"><%= post.otherInfo %></textarea>
+<button class="btn">Submit</button>
+</form>

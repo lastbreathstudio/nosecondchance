@@ -1,0 +1,15 @@
+<style>
+textarea,input{
+    display:block;
+    width: 80%;
+}
+</style>
+<h4 class="date"><%= post.date.toDateString() %></h4>
+<a href="/posts/<%=post._id %>/edit"><button>Edit this post</button><a>
+<form action="/posts/<%= post._id %>?_method=DELETE" method="POST">
+<button>Delete</button> 
+</form>
+<p class="h2"><%- post.post %></h2>
+<div class="post_img"><img src="<%- post.image %>"/></div>
+<div class="other"><%= post.otherInfo %></div>
+

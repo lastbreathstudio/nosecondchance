@@ -1,0 +1,21 @@
+{
+  "name": "nsc",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "sizoider <sizoider@hotmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}

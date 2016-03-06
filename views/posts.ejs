@@ -1,0 +1,10 @@
+<h1>POSTS</h1>
+<% posts.forEach(function(post){ %>
+     <article class="post wrapper">
+        <h4 class="date"><%= post.date.toDateString() %></h4>
+        <p class="h2"><%= post.post %></h2>
+        <div class="post_img"><img src="<%= post.image %>"/></div>
+        <div class="other"><%= post.otherInfo %></div>
+        <a href="/posts/<%=post._id %>">read and edit post</a>
+    </article>
+<% }); %>
